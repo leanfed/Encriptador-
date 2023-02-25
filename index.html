@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Encriptador de texto</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="logo">
+            <img src="imagenes/logo a.png" alt="logo">
+            <h1 id="titulo">Encriptador de texto</h1>
+        </div>
+        <div class="left">
+        <textarea cols="30" rows="10" type="text" class="inputone" id="input1" placeholder="Ingresar o pegar el texto aquí" style="resize:none"></textarea>
+        </div>
+        <div class="right">
+            <img src="imagenes/Munheco.png" alt="img" class="munheco" id="munhe">
+
+            <h1 class="text" id="textA">Ningún mensaje fue entontrado</h1>
+            <textarea name="text" id="text2" cols="100" rows="30"
+                style="resize:none">Ingrese el texto a encriptar o desencriptar</textarea>
+            <button id="copiar" onclick="copy();">¡Copiar!</button>
+
+        </div>
+
+
+        <div class="leftBottom">
+            <p><img src="imagenes/icons8-información.gif" style="width: 12px;" /> Ingrese el texto a encriptar o
+                desencriptar en letras minúsculas y sin acentos!</p>
+            <button id="encripto" onclick="encriptar();">Encriptar</button>
+            <button id="desencripto" onclick="desencriptado();">Desencriptar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
